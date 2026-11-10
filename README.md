@@ -6,7 +6,7 @@ Part of **[Epsilon Audio](https://github.com/natehouk/epsilon-plugins)**, a fami
 
 ![Slate](screenshot.png)
 
-Slate is a clean-room design with the feature set of FabFilter Pro-G, FabFilter's tenth plugin (May 2011). It was written from scratch, working only from FabFilter's public release announcement and contemporary news coverage. No FabFilter code, binaries, presets, artwork or trademarks were used.
+Slate is a gate and expander. It was written from scratch; no third-party code, presets or artwork are included.
 
 It is part of a family of plugins:
 - [Monolith](https://github.com/natehouk/monolith) (synth)
@@ -91,23 +91,7 @@ xattr -dr com.apple.quarantine ~/Library/Audio/Plug-Ins/*/Slate*
 
 ![Ducking](screenshot-ducking.png)
 
-### Compared with FabFilter Pro-G (2011)
-
-| Pro-G | Slate |
-|---|---|
-| Algorithms: Classic, Clean, Vocal, Guitar, upward expansion and Ducking (current Pro-G) | ✓ all six |
-| Program-dependent attack and release curves | ✓ per style (gentler closing after long openings, hysteresis, fast close on decaying notes) |
-| Threshold, ratio, range, attack, hold, release, knee | ✓ |
-| Optional look-ahead up to 10 ms; zero-latency operation | ✓ |
-| Real-time level display, transfer curve, input/output/gain-reduction metering | ✓ plus detector trace and gate state |
-| Expert mode: external sidechain, sidechain filtering, flexible routing and linking | ✓ sidechain level, high/low-pass, audition, link, mid/side |
-| Separate dry/wet levels and panning | ✓ wet, dry and wet pan |
-| Mono, stereo or mid/side processing | ✓ stereo and mid/side (a stereo plugin; use it on mono tracks as usual) |
-| Up to 4× linear-phase oversampling | ✓ |
-| MIDI triggering | ✓ |
-| MIDI Learn, undo/redo, A/B, smooth parameter changes, help with interactive hints | ✓ hover tips, help pages and full manual |
-| Factory presets | 39 factory presets plus user presets |
-| Pro Tools (RTAS/AAX) | Not supported (needs Avid's SDK and signing) |
+Not supported: Pro Tools (AAX).
 
 ## Build from source
 
@@ -162,5 +146,3 @@ Release checks:
 ## License
 
 [MIT](LICENSE). Built with [DPF](https://github.com/DISTRHO/DPF) and its bundled NanoVG, which are under the ISC license. `plugins/Slate/ResizeHandle.hpp` comes from DPF's examples and keeps its ISC notice.
-
-"FabFilter" and "FabFilter Pro-G" are trademarks of FabFilter Software Instruments. Slate is not affiliated with or endorsed by FabFilter.
